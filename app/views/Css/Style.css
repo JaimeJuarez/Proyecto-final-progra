@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    padding-top: 15px;
+}
+
+.Caja {
+    width: 302px !important;
+}
+
+.Registro {
+    flex-wrap: wrap;
+}
+
+body {
+    background: rgb(92, 149, 175);
+    background: linear-gradient(90deg, rgba(92, 149, 175, 1) 0%, rgba(104, 110, 230, 1) 100%);
+}
+
+.btn-seleccion-father {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Producto {
+    background: rgb(242, 242, 242);
+    background: linear-gradient(90deg, rgba(242, 242, 242, 1) 0%, rgba(216, 216, 231, 1) 100%);
+    padding: 4%;
+    border-radius: 15px;
+    box-shadow: 1px -2px 3px 1px #3d9c72;
+    width: 40%;
+}
+
+.resultados-father {
+    background: rgb(242, 242, 242);
+    background: linear-gradient(90deg, rgba(242, 242, 242, 1) 0%, rgba(216, 216, 231, 1) 100%);
+    padding: 4%;
+    border-radius: 15px;
+    box-shadow: 1px -2px 3px 1px #3d9c72
+}
+
+.Seleccion {
+    background: rgb(242, 242, 242);
+    background: linear-gradient(90deg, rgba(242, 242, 242, 1) 0%, rgba(216, 216, 231, 1) 100%);
+    padding: 4%;
+    border-radius: 15px;
+    box-shadow: 1px -2px 3px 1px #3d9c72
+}
+
+.Ventas {
+    background: rgb(242, 242, 242);
+    background: linear-gradient(90deg, rgba(242, 242, 242, 1) 0%, rgba(216, 216, 231, 1) 100%);
+    padding: 4%;
+    border-radius: 15px;
+    box-shadow: 1px -2px 3px 1px #3d9c72
+}
+
+.label-style {
+    width: 100%;
+}

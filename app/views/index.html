@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Css/Style.css">
+    <link rel="stylesheet" href="../views/lib/bootstrap/css/bootstrap.css">
+    <title>Index</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#">Proyecto Final </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+            </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="Registro d-flex">
+                <div class="Producto col-md-5 mb-5 ">
+                    <form method="post" action="http://localhost:3000/api/personas">
+
+                        <h1 class="fw-bold text-center">Producto Deseado</h1>
+                        <label for="nombre">Nombre del producto: </label><br>
+                        <input type="text" id="nombre" name="nombre" class="form-control"><br>
+                        <label for="edad"> cantidad:</label><br>
+                        <input type="text" id="cantidad" name="cantidad" class="form-control"><br>
+                        <label>Costo:   </label><br>
+                        <input type="text" id="precio" name="precio" class="form-control"><br><br>
+
+                        <input id="btnAdd" type="button" value="Comprar" class="btn btn-success w-100">
+
+
+
+                    </form>
+                </div>
+                <div class="resultados-father col-md-5 ms-5 mb-5">
+                    <div id="resultados" class="Resultados ">
+                        <h1 class="fw-bold text-center">Lista de compra</h1>
+                    </div>
+                    <input id="btnListar" type="button" value="Mostrar los objetos del carrito" class="btn btn-success w-100">
+                </div>
+                <div class="Seleccion col-md-5 me-5 mt-5">
+                    <h1 class="fw-bold text-center">Seleccion de producto</h1>
+                    <input type="number" placeholder="Ingresa la cantidad a ingresar al carrito" id="cant" class="form-control">
+                    <select name="Seleccion" id="Seleccion" class="form-select">products:</select> <br> <br>
+                    <div class="btn-seleccion-father">
+                        <input type="button" name="carrito" id="btnCarrito" value="Carrito compras" class="btn btn-success">
+                        <input type="button" name="Total" id="btnTotal" value="Monto total" class="btn btn-success"><br><br>
+                    </div>
+                </div>
+                <div class="Ventas col-md-5 mt-5">
+                    <form action="">
+
+                        <h1 class="fw-bold text-center">Ventas</h1>
+                        <label class="label-style">Subtotal<br><input type="text" id="venta" name="venta" class="form-control"></label><br>
+                        <label class="label-style">IVA(16%)<br><input type="text" id="iva" name="iva" class="form-control"></label><br>
+                        <label class="label-style">Total<br><input type="text" id="monto" name="monto" class="form-control"></label><br>
+                        <label class="label-style">RFC<br><input type="text" id="rfc" name="rfc" class="form-control"></label><br>
+                        <label class="label-style">Fecha de factura<br><input type="date" id="fecha" name="fecha" class="form-control"></label><br>
+                        <input id="btnFactura" type="button" value="Facturar" class="btn btn-warning mt-4 w-100">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Js/app.js"></script>
+    <script src="../views/lib/bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>
